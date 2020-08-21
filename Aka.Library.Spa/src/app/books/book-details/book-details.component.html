@@ -1,5 +1,5 @@
 <section *ngIf="book" fxLayout="row wrap" fxLayoutAlign="center center">
-  <h2>Book Titles: {{ book.title }} - {{ book.isbn }}</h2>
+  <h2>Book Titless: {{ book.title }} - {{ book.isbn }}</h2>
   <div>
     <button *ngIf="book.isCheckedOut" mat-button (click)="returnBook()">Return</button>
     <button [disabled]="!book.isAvailable || isMaximumNumberOfBooksSignedOut()" mat-button
